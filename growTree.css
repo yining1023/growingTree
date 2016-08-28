@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC|Fredericka+the+Great|Nixie+One)
+
+$amatic: 'Amatic SC', cursive
+$nixie: 'Nixie One', cursive
+$fredericka: 'Fredericka the Great', cursive
+
+$tree:           #354B5E
+$flower-light:   #F5B5C2
+$flower:         #F397A8
+$flower-white:   #FFFFFF
+
+.bp
+    display: block
+    margin: 130px auto 0
+
+    &__stalk
+        fill: none
+        // stroke-width: 10
+
+    &__flower
+        opacity: 0
+        // &--b
+        //     stroke-width: 1.2
+        //     stroke: white
+
+    &__fill
+        &--tree
+            fill: $tree
+        &--flower
+            fill: $flower
+        &--flower-light
+            fill: $flower-light
+        &--flower-white
+            fill: $flower-white
+
+    &__stroke
+        &--tree
+            stroke: $tree
+
+body
+    text-align: center
+    background-color:  #FFF7E7
+    // background-color:  #FBEBD2
+.pinkText
+    color: #f9708a
+.link
+    // display: inline-block
+    text-align: center
+    margin: auto
+    // padding: 1em 2em
+    font-family: $fredericka
+    font-size: 20px
+    font-weight: 100
+    text-decoration: none
+    color: #354B5E
+    // border-radius: 6px
+    // border: 2px solid #ddd
+    transition: .3s
+    // &:hover
+    // background: #eee
+
+.text2
+    position: absolute
+    left: 200px
+    top: 240px
+    font-size: 20px
+    // animation: anione 3s ease
+    // animation-delay: 15s
+    // -webkit-animation-delay: 15s
+.text1
+    position: absolute
+    left: 440px
+    top: 483px
+    font-size: 28px
+    // animation: anione 3s ease
+.text3
+    position: absolute
+    left: 250px
+    top: 373px
+    font-size: 16px
+    // animation: anione 6s ease
+    // animation-delay: 3s
+.text4
+    position: absolute
+    left: 580px
+    top: 165px
+    font-size: 16px
+    // animation: anione 9s ease
+    // animation-delay: 3s
+.text5
+    position: absolute
+    left: 750px
+    top: 300px
+    font-size: 16px
+    // animation: anione 12s ease
+    // animation-delay: 3s
+.text6
+    position: absolute
+    left: 730px
+    top: 410px
+    font-size: 16px
+    // animation: anione 15s ease
+    // animation-delay: 3s
+.text7
+    position: absolute
+    left: 900px
+    top: 230px
+    font-size: 22px
+    // animation: anione 18s ease
+    // animation-delay: 3s
+.text8
+    position: absolute
+    left: 300px
+    top: 100px
+    font-size: 30px
+    // animation: anione 21s ease
+    // animation-delay: 3s
+
+// keyframes mixin
+=keyframes($name)
+    @-webkit-keyframes #{$name}
+        @content
+    @-moz-keyframes #{$name}
+        @content
+    @-ms-keyframes #{$name}
+        @content
+    @keyframes #{$name}
+        @content
+
++keyframes(anione)
+    0%
+        color: #FFF7E7
+    100%
+        color: #354B5E
+    // 100%
+    //     color: #fff7e7
